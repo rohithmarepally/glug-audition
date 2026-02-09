@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Notes App</title>
+  <link rel="stylesheet" href="dog.css">
+ 
+</head>
+<body>
+
+<header>
+  <img class="icon" src="images/WhatsApp Image 2026-02-07 at 22.03.46.jpeg" />
+
+  <div class="group_search">
+    <input type="text" id="search" placeholder="Search notes..." />
+  </div>
+
+  <a href="profile/profile.html">
+    <img class="profile" src="images/3135715.png" />
+  </a>
+</header>
+
+
+<sidebar>
+  <button  onclick="setFilter('all')" >ALL</button>
+  <button  onclick="setFilter('bookmarks')">BOOKMARKS</button>
+  <div id="categoryFilters" class="Category"></div>
+  <input type="text" id="newCategoryInput" placeholder="Enter Category" />
+  <button id="addCategory">+ Add Category</button>
+</sidebar>
+<div class="app">
+  <h1>CREATE YOUR NOTES</h1>
+
+  <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+ <p>Select your category</p>
+  <select id="categoryInput"></select>
+
+  
+
+  <button id="addBtn">Add Note</button>
+
+  <div id="notesContainer"></div>
+</div>
+
+
+<script src="dog.js"></script>
+</body>
+</html>

@@ -113,3 +113,52 @@ button {
 }
 
 
+
+
+
+/* NOTES LIST */
+#notesContainer {
+  margin-top: 15px;
+}
+
+.note {
+  background: #f9f9f9;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.note:hover {
+  transform: scale(1.02);
+}
+
+.note p {
+  margin: 0 0 10px 0;
+  white-space: pre-wrap;
+}
+
+/* BUTTON GROUP */
+.note-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.note-actions button {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.edit-btn {
+  background: #2196f3;
+}
+
+.delete-btn {
+  background: crimson;
+}
+#categoryFilters div {
+  align-items: center;
+}
