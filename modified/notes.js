@@ -1,8 +1,8 @@
 
 
 
-  let notes = JSON.parse(localStorage.getItem("notes")) || [];
-  let categories = JSON.parse(localStorage.getItem("categories")) || ["General"];
+  let notes = JSON.parse(localStorage.getItem("notes")) || [] ;
+  let categories = JSON.parse(localStorage.getItem("categories")) || ["General"] ;
   let currentFilter = 'all';
 
   function saveNotes() {
@@ -142,7 +142,7 @@
 
     container.appendChild(btn);
 
-    // DO NOT allow deleting "General"
+    
     if (cat !== "General") {
       const delBtn = document.createElement("button");
       delBtn.textContent = "✖";
@@ -160,14 +160,14 @@
 function deleteCategory(category) {
   if (!confirm(`Delete category "${category}"?`)) return;
 
-  // Move notes to General
+  
   notes.forEach(note => {
     if (note.category === category) {
       note.category = "General";
     }
   });
 
-  // Remove category
+  
   categories = categories.filter(cat => cat !== category);
 
   currentFilter = "all";
