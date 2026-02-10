@@ -19,11 +19,14 @@
       top: 0; left: 0; right: 0;
       height: 63px;
       background-color: bisque;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 2px solid #03e3fc;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 12px;
+      
+
+      
     }
 
     .icon { 
@@ -62,11 +65,12 @@
     sidebar {
       position: fixed;
       
-      top: 63px; left: 0; bottom: 0;
+      top: 60px; left: 0; bottom: 0;
       width: 160px;
       background-color: bisque;
-      border-right: 1px solid #ccc;
+      border-right: 2px solid #03e3fc;
       display: flex;
+      z-index: 2;
       flex-direction: column;
       gap: 10px;
       padding: 10px;
